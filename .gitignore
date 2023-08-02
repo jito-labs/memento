@@ -1,1 +1,5 @@
-/target
+**/target
+/.idea
+/test-ledger
+/ledger
+.env

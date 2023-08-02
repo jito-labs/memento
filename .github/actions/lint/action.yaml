@@ -1,0 +1,58 @@
+name: Lint
+description: 'Run linters on the repository'
+
+runs:
+  using: composite
+  steps:
+    - uses: dsherret/rust-toolchain-file@v1
+
+    - name: setup rustc
+      run: |
+        rustup update stable
+      shell: bash
+
+    - name: Install Protobuf
+      run: |
+        export PROTOC_VERSION=21.12 && \
+        export PROTOC_ZIP=protoc-$PROTOC_VERSION-linux-x86_64.zip && \
+        curl -Ss -OL https://github.com/google/protobuf/releases/download/v$PROTOC_VERSION/$PROTOC_ZIP \
+        && sudo unzip -o $PROTOC_ZIP -d /usr/local bin/protoc \
+        && sudo unzip -o $PROTOC_ZIP -d /usr/local include/* \
+        && rm -f $PROTOC_ZIP
+      shell: bash
+
+    - name: Install latest nightly
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: nightly-2023-10-05-x86_64-unknown-linux-gnu
+        components: rustfmt, clippy
+
+    - name: Setup rust lint cache
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cargo/
+          target/
+        key: ${{ runner.os }}-cargo-lint-${{ hashFiles('**/Cargo.lock') }}
+
+    - name: Setup Rust tools
+      run: |
+        cargo +nightly-2023-10-05 install cargo-sort
+        cargo +nightly-2023-10-05 install cargo-udeps
+      shell: bash
+
+    - name: cargo sort
+      run: cargo +nightly-2023-10-05 sort --workspace --check
+      shell: bash
+
+    - name: cargo fmt
+      run: cargo +nightly-2023-10-05 fmt --all --check
+      shell: bash
+
+    - name: clippy
+      run: cargo +nightly-2023-10-05 clippy --all-features --all-targets --tests -- -D warnings
+      shell: bash
+
+    - name: cargo udeps
+      run: cargo +nightly-2023-10-05 udeps --all-features --all-targets --tests
+      shell: bash

@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package geyser;
+
+import "google/protobuf/empty.proto";
+
+message SnapshotAccount {
+  uint64 slot = 1;
+  bytes pubkey = 2;
+  uint64 lamports = 3;
+  bytes owner = 4;
+  bool is_executable = 5;
+  uint64 rent_epoch = 6;
+  bytes data = 7;
+  uint64 seq = 8;
+  bool is_startup = 9;
+  optional bytes tx_signature = 10;
+}
+
+message ReplayAccount {}
+
+message Account {
+  oneof msg {
+    SnapshotAccount snap = 1;
+    ReplayAccount replay = 2;
+  }
+}
+
+message GetReplayStateRequest {}
+
+message ReplayContext {
+  uint64 workspace_id = 1;
+  string addr = 2;
+  uint64 slot = 3;
+}
+
+message GetReplayStateResponse {
+  repeated ReplayContext states = 1;
+}
+
+message ReplayRequest {
+  uint64 slot = 1;
+}
+
+message ReplayResponse {
+  // address of the GeyserService one can connect to
+  string addr = 1;
+  uint64 workspace_id = 2;
+}
+
+message Snapshot {
+  string name = 1;
+  string filename = 2;
+  string url = 3;
+  uint64 size = 4;
+  uint64 slot = 5;
+  string hash = 6;
+}
+
+service GeyserService {
+  // Subscribe to geyser account updates from loading the snapshot
+  rpc SubscribeAccounts (google.protobuf.Empty) returns (stream Account) {}
+}
+
+// Service to request replay on
+service ReplayService {
+  /// Request to stream a snapshot, returns the address where you can connect to geyser
+  rpc StartReplay (ReplayRequest) returns (ReplayResponse) {}
+
+  /// Returns the snapshots that can be loaded from
+  rpc GetSnapshots(google.protobuf.Empty) returns (stream Snapshot) {}
+
+  /// Returns state on the workspaces running
+  rpc GetReplayState(GetReplayStateRequest) returns (GetReplayStateResponse) {}
+}

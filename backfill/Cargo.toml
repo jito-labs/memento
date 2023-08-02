@@ -1,0 +1,36 @@
+[package]
+name = "jito-replayer-backfill"
+readme = "../README.md"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[dependencies]
+chrono = { workspace = true }
+clap = { workspace = true }
+clickhouse-rs = { workspace = true }
+cloud-storage = { workspace = true }
+crossbeam-channel = { workspace = true }
+futures = { workspace = true }
+futures-util = { workspace = true }
+jito-gcs = { workspace = true }
+jito-net = { workspace = true }
+jito-protos = { workspace = true }
+jito-replayer-db = { workspace = true }
+jito-workers = { workspace = true }
+reqwest = { workspace = true, features = ["stream"] }
+serde = { workspace = true }
+serde_yaml = { workspace = true }
+solana-account-decoder = { workspace = true }
+solana-ledger = { workspace = true }
+solana-runtime = { workspace = true }
+solana-sdk = { workspace = true }
+solana-storage-bigtable = { workspace = true }
+spl-token = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true, features = ["rt-multi-thread", "rt", "time"] }
+tokio-retry = { workspace = true }
+tokio-stream = { workspace = true }
+tonic = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }

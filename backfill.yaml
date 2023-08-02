@@ -1,0 +1,321 @@
+max_workers: 4
+programs:
+  - opnbkNkqux64GppQhwbyEVc3axhssFhVYuwar8rDHCu # openbook https://github.com/openbook-dex/openbook-v2#deployed-versions
+  - whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc # orca whirlpool clmm https://orca-so.gitbook.io/orca-developer-portal/whirlpools/interacting-with-the-protocol/orca-whirlpools-parameters
+  - MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA # marginfi https://docs.marginfi.com/contracts/marginfi-v2-mrgnlend
+  - Eo7WjKq67rjJQSZxS6z3YkapzY3eMj6Xy8X5EQVn5UaB # meteora pool https://docs.meteora.ag/dynamic-pools-integration/using-typescript-client
+  - 24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi # meteora vault program
+  - 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc # kamino https://solscan.io/account/6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc TODO (LB): need kamino v2
+  - 4MangoMjqJ2firMokCjjGgoK8d4MXcrgL7XJaL3w6fVg # mango v4 https://github.com/blockworks-foundation/mango-v4
+  - mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68 # mango v3 https://github.com/blockworks-foundation/mango-v3/blob/c4d52dc7f08e9ba4ae13728d0a2f1c298c0c4a86/mango-logs/src/lib.rs#L4
+  - So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo # solend https://solscan.io/account/So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo
+  - TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA # token program
+  - T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt # tip payment program
+  - 4R3gSG8BpU4t19KYj8CfnbtRpnT8gtk4dvTHxVRwc2r7 # tip distribution program
+  - SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy # stake pool program https://spl.solana.com/stake-pool
+  - FsJ3A3u2vn5cTVofAjvy6y5kwABJAqYWpe4975bi2epH # pyth program id https://solscan.io/account/FsJ3A3u2vn5cTVofAjvy6y5kwABJAqYWpe4975bi2epH
+  - SW1TCH7qEPTdLsDHRgPuMQjbQxKdH2aBStViMFnt64f # switchboard program id https://github.com/switchboard-xyz/solana-sdk#mainnet
+  - DtmE9D2CSB4L5D6A15mraeEjrGMm6auWVzgaD8hK2tZM # switchboard oracle? https://solscan.io/account/DtmE9D2CSB4L5D6A15mraeEjrGMm6auWVzgaD8hK2tZM
+  - Stake11111111111111111111111111111111111111 # stake program
+  - Vote111111111111111111111111111111111111111 # vote program
+  - SysvarC1ock11111111111111111111111111111111 # clock sysvar
+  - CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK # raydium clmm https://solscan.io/account/CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK
+  - 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 # raydium liquidity pool v4 https://solscan.io/account/675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8
+  - 9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin # serum dex v3 https://solscan.io/account/9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin
+  - ZETAxsqBRek56DhiGXrn75yj2NHU3aYUnxvHXpkf3aD # zeta dex https://solscan.io/account/ZETAxsqBRek56DhiGXrn75yj2NHU3aYUnxvHXpkf3aD
+  - JUP6i4ozu5ydDCnLiMogSckDPpbtr7BJ4FtzYWkb5Rk # jupiter v1
+  - JUP2jxvXaqu7NQY1GmNF4m1vodw12LVXYxbFL2uJvfo # jupiter v2 https://solscan.io/account/JUP2jxvXaqu7NQY1GmNF4m1vodw12LVXYxbFL2uJvfo
+  - JUP3c2Uh3WA4Ng34tw6kPd2G4C5BB21Xo36Je1s32Ph # jupiter v3
+  - JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB # jupiter v4
+  - dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH # drift v2 https://solscan.io/account/dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH
+  - SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ # saber stable swap https://solscan.io/account/SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ
+  - MERLuDFBMmsHnsBPZw2sDQZHvXFMwp8EdjudcU2HKky # mercurial stable swap https://solscan.io/account/MERLuDFBMmsHnsBPZw2sDQZHvXFMwp8EdjudcU2HKky
+  - PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY # phoenix dex https://solscan.io/account/PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY
+  - R2y9ip6mxmWUj4pt54jP2hz2dgvMozy9VTSwMWE7evs # psyoptions https://solscan.io/account/R2y9ip6mxmWUj4pt54jP2hz2dgvMozy9VTSwMWE7evs
+  - EewxydAPCCVuNEyrVN68PuSYdQ7wKn27V9Gjeoi8dy3S # lifinity swap https://solscan.io/account/EewxydAPCCVuNEyrVN68PuSYdQ7wKn27V9Gjeoi8dy3S
+  - 2wT8Yq49kHgDzXuPxZSaeLaH1qbmGXtEyPy64bL7aD3c # lifinity swap v2
+  - FC81tbGt6JWRXidaWYFXxGnTk4VgobhJHATvTRVMqgWj # franciumdefi lending https://solscan.io/account/FC81tbGt6JWRXidaWYFXxGnTk4VgobhJHATvTRVMqgWj
+  - unpXTU2Ndrc7WWNyEhQWe4udTzSibLPi25SXv2xbCHQ # sanctum unstake program https://docs.sanctum.so/contracts
+  - stkitrT1Uoy18Dk1fTrgPw8W6MVzoCfYoAFT4MLsmhq # sanctum router program
+  - JPv1rCqrhagNNmJVM5J1he7msQ5ybtvE1nNuHpDHMNU # jet v1 https://docs.jetprotocol.io/jet-protocol/protocol/smart-contracts
+  - JPMRGNgRk3w2pzBM1RLNBnpGxQYsFQ3yXKpuk4tTXVZ # jet margin https://docs.jetprotocol.io/jet-protocol/protocol/smart-contracts
+  - JPPooLEqRo3NCSx82EdE2VZY5vUaSsgskpZPBHNGVLZ # jet margin pool https://docs.jetprotocol.io/jet-protocol/protocol/smart-contracts
+  - JPPooLEqRo3NCSx82EdE2VZY5vUaSsgskpZPBHNGVLZ # jet margin swap https://docs.jetprotocol.io/jet-protocol/protocol/smart-contracts
+  - JPCtrLreUqsEbdhtxZ8zpd8wBydKz4nuEjX5u9Eg5H8 # jet control https://docs.jetprotocol.io/jet-protocol/protocol/smart-contracts
+  - JPTermEg2DwrV39xb1Fs7z1VUxcvdPT7mE7cyGsQ4xt # jet fixed term https://docs.jetprotocol.io/jet-protocol/protocol/smart-contracts
+  - JPASMkxARMmbeahk37H8PAAP1UzPNC4wGhvwLnBsfHi # jet airspace https://docs.jetprotocol.io/jet-protocol/protocol/smart-contracts
+  - HyaB3W9q6XdA5xwpU4XnSZV94htfmbmqJXZcEbRaJutt # invariant swap
+  - MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD # marinade account https://docs.marinade.finance/developers/contract-addresses
+  - dstK1PDHNoKN9MdmftRzsEbXP5T1FTBiQBm1Ee3meVd # marinade directed stake (native) https://docs.marinade.finance/developers/contract-addresses
+  - CrX7kMhLC3cSsXJdT7JDgqrRVWGnUpX3gfEfxxU2NVLi # lido on solana https://solscan.io/account/CrX7kMhLC3cSsXJdT7JDgqrRVWGnUpX3gfEfxxU2NVLi
+  - SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu # squads v3 https://github.com/Squads-Protocol/squads-mpl#mainnet-testnet--devnet
+  - SMPLKTQhrgo22hFCVq2VGX1KAktTWjeizkhrdB1eauK # squads program manager https://github.com/Squads-Protocol/squads-mpl#mainnet-testnet--devnet
+
+# TODO there was unnamed GCS buckets used for this... ask around if you need them
+# RUST_LOG=info ./target/release/jito-worker-cli find-daily-snapshots 100000000 17
+slots:
+  - 170289741 # date: 2023-01-01 17:00:00, closest block time: 2023-01-01T17:02:28, time diff: 2.47 minutes
+  - 170475281 # date: 2023-01-02 17:00:00, closest block time: 2023-01-02T17:09:20, time diff: 9.33 minutes
+  - 170638646 # date: 2023-01-03 17:00:00, closest block time: 2023-01-03T17:02:00, time diff: 2.00 minutes
+  - 170801214 # date: 2023-01-04 17:00:00, closest block time: 2023-01-04T17:02:50, time diff: 2.83 minutes
+  - 170968407 # date: 2023-01-05 17:00:00, closest block time: 2023-01-05T17:01:34, time diff: 1.57 minutes
+  - 171133615 # date: 2023-01-06 17:00:00, closest block time: 2023-01-06T16:58:16, time diff: 1.73 minutes
+  - 171296116 # date: 2023-01-07 17:00:00, closest block time: 2023-01-07T17:03:12, time diff: 3.20 minutes
+  - 171461994 # date: 2023-01-08 17:00:00, closest block time: 2023-01-08T16:57:33, time diff: 2.45 minutes
+  - 171630493 # date: 2023-01-09 17:00:00, closest block time: 2023-01-09T16:58:51, time diff: 1.15 minutes
+  - 171798233 # date: 2023-01-10 17:00:00, closest block time: 2023-01-10T17:05:23, time diff: 5.38 minutes
+  - 171964083 # date: 2023-01-11 17:00:00, closest block time: 2023-01-11T16:56:32, time diff: 3.47 minutes
+  - 172136171 # date: 2023-01-12 17:00:00, closest block time: 2023-01-12T17:09:09, time diff: 9.15 minutes
+  - 172306070 # date: 2023-01-13 17:00:00, closest block time: 2023-01-13T17:01:10, time diff: 1.17 minutes
+  - 172473693 # date: 2023-01-14 17:00:00, closest block time: 2023-01-14T16:51:06, time diff: 8.90 minutes
+  - 172648788 # date: 2023-01-15 17:00:00, closest block time: 2023-01-15T17:03:15, time diff: 3.25 minutes
+  - 172820250 # date: 2023-01-16 17:00:00, closest block time: 2023-01-16T16:54:31, time diff: 5.48 minutes
+  - 172993962 # date: 2023-01-17 17:00:00, closest block time: 2023-01-17T16:56:35, time diff: 3.42 minutes
+  - 173164374 # date: 2023-01-18 17:00:00, closest block time: 2023-01-18T17:04:50, time diff: 4.83 minutes
+  - 173331392 # date: 2023-01-19 17:00:00, closest block time: 2023-01-19T16:59:07, time diff: 0.88 minutes
+  - 173498926 # date: 2023-01-20 17:00:00, closest block time: 2023-01-20T16:56:05, time diff: 3.92 minutes
+  - 173671756 # date: 2023-01-21 17:00:00, closest block time: 2023-01-21T17:34:30, time diff: 34.50 minutes
+  - 173838631 # date: 2023-01-22 17:00:00, closest block time: 2023-01-22T16:50:22, time diff: 9.63 minutes
+  - 174006525 # date: 2023-01-23 17:00:00, closest block time: 2023-01-23T16:49:04, time diff: 10.93 minutes
+  - 174177146 # date: 2023-01-24 17:00:00, closest block time: 2023-01-24T16:48:18, time diff: 11.70 minutes
+  - 174348419 # date: 2023-01-25 17:00:00, closest block time: 2023-01-25T16:55:50, time diff: 4.17 minutes
+  - 174518055 # date: 2023-01-26 17:00:00, closest block time: 2023-01-26T16:55:06, time diff: 4.90 minutes
+  - 174688956 # date: 2023-01-27 17:00:00, closest block time: 2023-01-27T16:57:03, time diff: 2.95 minutes
+  - 174861401 # date: 2023-01-28 17:00:00, closest block time: 2023-01-28T17:07:44, time diff: 7.73 minutes
+  - 175028965 # date: 2023-01-29 17:00:00, closest block time: 2023-01-29T16:44:06, time diff: 15.90 minutes
+  - 175195831 # date: 2023-01-30 17:00:00, closest block time: 2023-01-30T16:49:53, time diff: 10.12 minutes
+  - 175354404 # date: 2023-01-31 17:00:00, closest block time: 2023-01-31T17:00:28, time diff: 0.47 minutes
+  - 175522479 # date: 2023-02-01 17:00:00, closest block time: 2023-02-01T17:36:34, time diff: 36.57 minutes
+  - 175683207 # date: 2023-02-02 17:00:00, closest block time: 2023-02-02T16:46:32, time diff: 13.47 minutes
+  - 175852654 # date: 2023-02-03 17:00:00, closest block time: 2023-02-03T17:12:29, time diff: 12.48 minutes
+  - 176025828 # date: 2023-02-04 17:00:00, closest block time: 2023-02-04T17:17:52, time diff: 17.87 minutes
+  - 176194832 # date: 2023-02-05 17:00:00, closest block time: 2023-02-05T16:42:12, time diff: 17.80 minutes
+  - 176370417 # date: 2023-02-06 17:00:00, closest block time: 2023-02-06T16:51:51, time diff: 8.15 minutes
+  - 176550084 # date: 2023-02-07 17:00:00, closest block time: 2023-02-07T16:42:59, time diff: 17.02 minutes
+  - 176727197 # date: 2023-02-08 17:00:00, closest block time: 2023-02-08T16:39:39, time diff: 20.35 minutes
+  - 176899905 # date: 2023-02-09 17:00:00, closest block time: 2023-02-09T16:57:01, time diff: 2.98 minutes
+  - 177066329 # date: 2023-02-10 17:00:00, closest block time: 2023-02-10T16:45:56, time diff: 14.07 minutes
+  - 177243214 # date: 2023-02-11 17:00:00, closest block time: 2023-02-11T17:04:15, time diff: 4.25 minutes
+  - 177418020 # date: 2023-02-12 17:00:00, closest block time: 2023-02-12T16:55:44, time diff: 4.27 minutes
+  - 177591560 # date: 2023-02-13 17:00:00, closest block time: 2023-02-13T17:09:34, time diff: 9.57 minutes
+  - 177763884 # date: 2023-02-14 17:00:00, closest block time: 2023-02-14T17:13:21, time diff: 13.35 minutes
+  - 177935934 # date: 2023-02-15 17:00:00, closest block time: 2023-02-15T17:14:11, time diff: 14.18 minutes
+  - 178096423 # date: 2023-02-16 17:00:00, closest block time: 2023-02-16T16:47:31, time diff: 12.48 minutes
+  - 178262877 # date: 2023-02-17 17:00:00, closest block time: 2023-02-17T17:03:23, time diff: 3.38 minutes
+  - 178432518 # date: 2023-02-18 17:00:00, closest block time: 2023-02-18T17:11:24, time diff: 11.40 minutes
+  - 178601761 # date: 2023-02-19 17:00:00, closest block time: 2023-02-19T17:05:04, time diff: 5.07 minutes
+  - 178768653 # date: 2023-02-20 17:00:00, closest block time: 2023-02-20T17:08:13, time diff: 8.22 minutes
+  - 178939194 # date: 2023-02-21 17:00:00, closest block time: 2023-02-21T17:15:46, time diff: 15.77 minutes
+  - 179105646 # date: 2023-02-22 17:00:00, closest block time: 2023-02-22T17:11:02, time diff: 11.03 minutes
+  - 179270877 # date: 2023-02-23 17:00:00, closest block time: 2023-02-23T16:44:19, time diff: 15.68 minutes
+  - 179438807 # date: 2023-02-24 17:00:00, closest block time: 2023-02-24T16:54:08, time diff: 5.87 minutes
+  - 179538244 # date: 2023-02-25 17:00:00, closest block time: 2023-02-26T02:41:02, time diff: 581.03 minutes
+  - 179652243 # date: 2023-02-26 17:00:00, closest block time: 2023-02-26T17:09:18, time diff: 9.30 minutes
+  - 179832821 # date: 2023-02-27 17:00:00, closest block time: 2023-02-27T17:06:47, time diff: 6.78 minutes
+  - 180013965 # date: 2023-02-28 17:00:00, closest block time: 2023-02-28T17:00:29, time diff: 0.48 minutes
+  - 180194197 # date: 2023-03-01 17:00:00, closest block time: 2023-03-01T16:57:15, time diff: 2.75 minutes
+  - 180378562 # date: 2023-03-02 17:00:00, closest block time: 2023-03-02T16:56:45, time diff: 3.25 minutes
+  - 180560606 # date: 2023-03-03 17:00:00, closest block time: 2023-03-03T17:07:44, time diff: 7.73 minutes
+  - 180743883 # date: 2023-03-04 17:00:00, closest block time: 2023-03-04T16:50:01, time diff: 9.98 minutes
+  - 180930074 # date: 2023-03-05 17:00:00, closest block time: 2023-03-05T17:02:08, time diff: 2.13 minutes
+  - 181112880 # date: 2023-03-06 17:00:00, closest block time: 2023-03-06T16:54:09, time diff: 5.85 minutes
+  - 181297048 # date: 2023-03-07 17:00:00, closest block time: 2023-03-07T16:52:23, time diff: 7.62 minutes
+  - 181479403 # date: 2023-03-08 17:00:00, closest block time: 2023-03-08T16:56:11, time diff: 3.82 minutes
+  - 181660550 # date: 2023-03-09 17:00:00, closest block time: 2023-03-09T17:01:08, time diff: 1.13 minutes
+  - 181843057 # date: 2023-03-10 17:00:00, closest block time: 2023-03-10T17:07:27, time diff: 7.45 minutes
+  - 182020953 # date: 2023-03-11 17:00:00, closest block time: 2023-03-11T16:53:54, time diff: 6.10 minutes
+  - 182207361 # date: 2023-03-12 17:00:00, closest block time: 2023-03-12T17:02:26, time diff: 2.43 minutes
+  - 182390636 # date: 2023-03-13 17:00:00, closest block time: 2023-03-13T17:02:15, time diff: 2.25 minutes
+  - 182573775 # date: 2023-03-14 17:00:00, closest block time: 2023-03-14T17:03:03, time diff: 3.05 minutes
+  - 182757945 # date: 2023-03-15 17:00:00, closest block time: 2023-03-15T17:18:00, time diff: 18.00 minutes
+  - 182938724 # date: 2023-03-16 17:00:00, closest block time: 2023-03-16T16:52:41, time diff: 7.32 minutes
+  - 183123486 # date: 2023-03-17 17:00:00, closest block time: 2023-03-17T16:59:26, time diff: 0.57 minutes
+  - 183311659 # date: 2023-03-18 17:00:00, closest block time: 2023-03-18T17:06:02, time diff: 6.03 minutes
+  - 183502514 # date: 2023-03-19 17:00:00, closest block time: 2023-03-19T17:02:15, time diff: 2.25 minutes
+  - 183691832 # date: 2023-03-20 17:00:00, closest block time: 2023-03-20T17:00:15, time diff: 0.25 minutes
+  - 183878338 # date: 2023-03-21 17:00:00, closest block time: 2023-03-21T16:58:45, time diff: 1.25 minutes
+  - 184065845 # date: 2023-03-22 17:00:00, closest block time: 2023-03-22T17:01:58, time diff: 1.97 minutes
+  - 184252980 # date: 2023-03-23 17:00:00, closest block time: 2023-03-23T17:04:23, time diff: 4.38 minutes
+  - 184440152 # date: 2023-03-24 17:00:00, closest block time: 2023-03-24T17:05:00, time diff: 5.00 minutes
+  - 184627323 # date: 2023-03-25 17:00:00, closest block time: 2023-03-25T16:46:19, time diff: 13.68 minutes
+  - 184819695 # date: 2023-03-26 17:00:00, closest block time: 2023-03-26T16:54:15, time diff: 5.75 minutes
+  - 185010880 # date: 2023-03-27 17:00:00, closest block time: 2023-03-27T17:01:46, time diff: 1.77 minutes
+  - 185200729 # date: 2023-03-28 17:00:00, closest block time: 2023-03-28T17:01:30, time diff: 1.50 minutes
+  - 185390251 # date: 2023-03-29 17:00:00, closest block time: 2023-03-29T16:58:12, time diff: 1.80 minutes
+  - 185581198 # date: 2023-03-30 17:00:00, closest block time: 2023-03-30T17:12:39, time diff: 12.65 minutes
+  - 185771885 # date: 2023-03-31 17:00:00, closest block time: 2023-03-31T17:25:33, time diff: 25.55 minutes
+  - 185955069 # date: 2023-04-01 17:00:00, closest block time: 2023-04-01T16:43:08, time diff: 16.87 minutes
+  - 186144681 # date: 2023-04-02 17:00:00, closest block time: 2023-04-02T16:45:05, time diff: 14.92 minutes
+  - 186333210 # date: 2023-04-03 17:00:00, closest block time: 2023-04-03T16:59:00, time diff: 1.00 minutes
+  - 186521843 # date: 2023-04-04 17:00:00, closest block time: 2023-04-04T17:04:21, time diff: 4.35 minutes
+  - 186710575 # date: 2023-04-05 17:00:00, closest block time: 2023-04-05T17:06:46, time diff: 6.77 minutes
+  - 186896379 # date: 2023-04-06 17:00:00, closest block time: 2023-04-06T16:39:01, time diff: 20.98 minutes
+  - 187090592 # date: 2023-04-07 17:00:00, closest block time: 2023-04-07T17:08:46, time diff: 8.77 minutes
+  - 187282849 # date: 2023-04-08 17:00:00, closest block time: 2023-04-08T17:20:28, time diff: 20.47 minutes
+  - 187471391 # date: 2023-04-09 17:00:00, closest block time: 2023-04-09T17:04:32, time diff: 4.53 minutes
+  - 187659798 # date: 2023-04-10 17:00:00, closest block time: 2023-04-10T16:53:33, time diff: 6.45 minutes
+  - 187847792 # date: 2023-04-11 17:00:00, closest block time: 2023-04-11T16:56:40, time diff: 3.33 minutes
+  - 188034784 # date: 2023-04-12 17:00:00, closest block time: 2023-04-12T16:56:22, time diff: 3.63 minutes
+  - 188220528 # date: 2023-04-13 17:00:00, closest block time: 2023-04-13T16:56:58, time diff: 3.03 minutes
+  - 188408781 # date: 2023-04-14 17:00:00, closest block time: 2023-04-14T17:13:59, time diff: 13.98 minutes
+  - 188596239 # date: 2023-04-15 17:00:00, closest block time: 2023-04-15T17:01:37, time diff: 1.62 minutes
+  - 188781535 # date: 2023-04-16 17:00:00, closest block time: 2023-04-16T16:35:15, time diff: 24.75 minutes
+  - 188971098 # date: 2023-04-17 17:00:00, closest block time: 2023-04-17T17:07:09, time diff: 7.15 minutes
+  - 189158176 # date: 2023-04-18 17:00:00, closest block time: 2023-04-18T17:00:50, time diff: 0.83 minutes
+  - 189336862 # date: 2023-04-19 17:00:00, closest block time: 2023-04-19T16:50:44, time diff: 9.27 minutes
+  - 189514679 # date: 2023-04-20 17:00:00, closest block time: 2023-04-20T16:57:42, time diff: 2.30 minutes
+  - 189698262 # date: 2023-04-21 17:00:00, closest block time: 2023-04-21T17:07:28, time diff: 7.47 minutes
+  - 189883131 # date: 2023-04-22 17:00:00, closest block time: 2023-04-22T17:06:18, time diff: 6.30 minutes
+  - 190070469 # date: 2023-04-23 17:00:00, closest block time: 2023-04-23T17:17:59, time diff: 17.98 minutes
+  - 190252873 # date: 2023-04-24 17:00:00, closest block time: 2023-04-24T17:02:45, time diff: 2.75 minutes
+  - 190437989 # date: 2023-04-25 17:00:00, closest block time: 2023-04-25T16:54:44, time diff: 5.27 minutes
+  - 190626300 # date: 2023-04-26 17:00:00, closest block time: 2023-04-26T17:10:03, time diff: 10.05 minutes
+  - 190810165 # date: 2023-04-27 17:00:00, closest block time: 2023-04-27T17:06:57, time diff: 6.95 minutes
+  - 190994873 # date: 2023-04-28 17:00:00, closest block time: 2023-04-28T16:55:51, time diff: 4.15 minutes
+  - 191182319 # date: 2023-04-29 17:00:00, closest block time: 2023-04-29T17:03:06, time diff: 3.10 minutes
+  - 191370289 # date: 2023-04-30 17:00:00, closest block time: 2023-04-30T17:06:05, time diff: 6.08 minutes
+  - 191552559 # date: 2023-05-01 17:00:00, closest block time: 2023-05-01T16:41:04, time diff: 18.93 minutes
+  - 191740630 # date: 2023-05-02 17:00:00, closest block time: 2023-05-02T16:41:28, time diff: 18.53 minutes
+  - 191919697 # date: 2023-05-03 17:00:00, closest block time: 2023-05-03T17:11:02, time diff: 11.03 minutes
+  - 192103725 # date: 2023-05-04 17:00:00, closest block time: 2023-05-04T17:17:41, time diff: 17.68 minutes
+  - 192281015 # date: 2023-05-05 17:00:00, closest block time: 2023-05-05T16:45:34, time diff: 14.43 minutes
+  - 192463268 # date: 2023-05-06 17:00:00, closest block time: 2023-05-06T16:58:51, time diff: 1.15 minutes
+  - 192644992 # date: 2023-05-07 17:00:00, closest block time: 2023-05-07T16:41:45, time diff: 18.25 minutes
+  - 192827418 # date: 2023-05-08 17:00:00, closest block time: 2023-05-08T16:53:09, time diff: 6.85 minutes
+  - 193011437 # date: 2023-05-09 17:00:00, closest block time: 2023-05-09T17:11:38, time diff: 11.63 minutes
+  - 193188795 # date: 2023-05-10 17:00:00, closest block time: 2023-05-10T17:04:44, time diff: 4.73 minutes
+  - 193364890 # date: 2023-05-11 17:00:00, closest block time: 2023-05-11T17:01:10, time diff: 1.17 minutes
+  - 193547507 # date: 2023-05-12 17:00:00, closest block time: 2023-05-12T17:46:12, time diff: 46.20 minutes
+  - 193721044 # date: 2023-05-13 17:00:00, closest block time: 2023-05-13T16:59:19, time diff: 0.68 minutes
+  - 193900736 # date: 2023-05-14 17:00:00, closest block time: 2023-05-14T16:43:38, time diff: 16.37 minutes
+  - 194083702 # date: 2023-05-15 17:00:00, closest block time: 2023-05-15T16:59:01, time diff: 0.98 minutes
+  - 194262488 # date: 2023-05-16 17:00:00, closest block time: 2023-05-16T16:49:13, time diff: 10.78 minutes
+  - 194446598 # date: 2023-05-17 17:00:00, closest block time: 2023-05-17T16:58:36, time diff: 1.40 minutes
+  - 194628659 # date: 2023-05-18 17:00:00, closest block time: 2023-05-18T17:06:45, time diff: 6.75 minutes
+  - 194813173 # date: 2023-05-19 17:00:00, closest block time: 2023-05-19T17:20:34, time diff: 20.57 minutes
+  - 194995962 # date: 2023-05-20 17:00:00, closest block time: 2023-05-20T17:07:15, time diff: 7.25 minutes
+  - 195179289 # date: 2023-05-21 17:00:00, closest block time: 2023-05-21T16:53:09, time diff: 6.85 minutes
+  - 195363937 # date: 2023-05-22 17:00:00, closest block time: 2023-05-22T16:53:06, time diff: 6.90 minutes
+  - 195552519 # date: 2023-05-23 17:00:00, closest block time: 2023-05-23T16:59:52, time diff: 0.13 minutes
+  - 195738171 # date: 2023-05-24 17:00:00, closest block time: 2023-05-24T17:12:22, time diff: 12.37 minutes
+  - 195913809 # date: 2023-05-25 17:00:00, closest block time: 2023-05-25T17:08:33, time diff: 8.55 minutes
+  - 196096353 # date: 2023-05-26 17:00:00, closest block time: 2023-05-26T16:51:37, time diff: 8.38 minutes
+  - 196285239 # date: 2023-05-27 17:00:00, closest block time: 2023-05-27T17:06:33, time diff: 6.55 minutes
+  - 196471223 # date: 2023-05-28 17:00:00, closest block time: 2023-05-28T17:08:38, time diff: 8.63 minutes
+  - 196657341 # date: 2023-05-29 17:00:00, closest block time: 2023-05-29T16:59:29, time diff: 0.52 minutes
+  - 196843105 # date: 2023-05-30 17:00:00, closest block time: 2023-05-30T17:06:16, time diff: 6.27 minutes
+  - 197024963 # date: 2023-05-31 17:00:00, closest block time: 2023-05-31T17:00:26, time diff: 0.43 minutes
+  - 197203974 # date: 2023-06-01 17:00:00, closest block time: 2023-06-01T16:52:52, time diff: 7.13 minutes
+  - 197390094 # date: 2023-06-02 17:00:00, closest block time: 2023-06-02T17:01:58, time diff: 1.97 minutes
+  - 197576255 # date: 2023-06-03 17:00:00, closest block time: 2023-06-03T17:11:03, time diff: 11.05 minutes
+  - 197760268 # date: 2023-06-04 17:00:00, closest block time: 2023-06-04T17:06:17, time diff: 6.28 minutes
+  - 197941549 # date: 2023-06-05 17:00:00, closest block time: 2023-06-05T16:53:53, time diff: 6.12 minutes
+  - 198123316 # date: 2023-06-06 17:00:00, closest block time: 2023-06-06T17:01:12, time diff: 1.20 minutes
+  - 198304731 # date: 2023-06-07 17:00:00, closest block time: 2023-06-07T17:03:49, time diff: 3.82 minutes
+  - 198486799 # date: 2023-06-08 17:00:00, closest block time: 2023-06-08T17:02:37, time diff: 2.62 minutes
+  - 198667994 # date: 2023-06-09 17:00:00, closest block time: 2023-06-09T16:46:34, time diff: 13.43 minutes
+  - 198843465 # date: 2023-06-10 17:00:00, closest block time: 2023-06-10T17:22:45, time diff: 22.75 minutes
+  - 199015639 # date: 2023-06-11 17:00:00, closest block time: 2023-06-11T17:05:14, time diff: 5.23 minutes
+  - 199191100 # date: 2023-06-12 17:00:00, closest block time: 2023-06-12T16:59:34, time diff: 0.43 minutes
+  - 199371780 # date: 2023-06-13 17:00:00, closest block time: 2023-06-13T17:01:39, time diff: 1.65 minutes
+  - 199555991 # date: 2023-06-14 17:00:00, closest block time: 2023-06-14T17:04:41, time diff: 4.68 minutes
+  - 199744874 # date: 2023-06-15 17:00:00, closest block time: 2023-06-15T17:08:19, time diff: 8.32 minutes
+  - 199933931 # date: 2023-06-16 17:00:00, closest block time: 2023-06-16T16:48:57, time diff: 11.05 minutes
+  - 200123432 # date: 2023-06-17 17:00:00, closest block time: 2023-06-17T16:41:32, time diff: 18.47 minutes
+  - 200318957 # date: 2023-06-18 17:00:00, closest block time: 2023-06-18T16:52:34, time diff: 7.43 minutes
+  - 200512096 # date: 2023-06-19 17:00:00, closest block time: 2023-06-19T16:47:27, time diff: 12.55 minutes
+  - 200705307 # date: 2023-06-20 17:00:00, closest block time: 2023-06-20T17:00:03, time diff: 0.05 minutes
+  - 200895434 # date: 2023-06-21 17:00:00, closest block time: 2023-06-21T17:09:22, time diff: 9.37 minutes
+  - 201085908 # date: 2023-06-22 17:00:00, closest block time: 2023-06-22T17:17:47, time diff: 17.78 minutes
+  - 201276955 # date: 2023-06-23 17:00:00, closest block time: 2023-06-23T17:28:31, time diff: 28.52 minutes
+  - 201461325 # date: 2023-06-24 17:00:00, closest block time: 2023-06-24T16:44:24, time diff: 15.60 minutes
+  - 201658316 # date: 2023-06-25 17:00:00, closest block time: 2023-06-25T17:17:09, time diff: 17.15 minutes
+  - 201848366 # date: 2023-06-26 17:00:00, closest block time: 2023-06-26T17:01:16, time diff: 1.27 minutes
+  - 202040585 # date: 2023-06-27 17:00:00, closest block time: 2023-06-27T17:09:18, time diff: 9.30 minutes
+  - 202232757 # date: 2023-06-28 17:00:00, closest block time: 2023-06-28T17:00:31, time diff: 0.52 minutes
+  - 202425248 # date: 2023-06-29 17:00:00, closest block time: 2023-06-29T16:59:44, time diff: 0.27 minutes
+  - 202618331 # date: 2023-06-30 17:00:00, closest block time: 2023-06-30T17:16:15, time diff: 16.25 minutes
+  - 202812129 # date: 2023-07-01 17:00:00, closest block time: 2023-07-01T17:16:14, time diff: 16.23 minutes
+  - 203003808 # date: 2023-07-02 17:00:00, closest block time: 2023-07-02T16:50:33, time diff: 9.45 minutes
+  - 203198172 # date: 2023-07-03 17:00:00, closest block time: 2023-07-03T17:02:52, time diff: 2.87 minutes
+  - 203394390 # date: 2023-07-04 17:00:00, closest block time: 2023-07-04T17:04:17, time diff: 4.28 minutes
+  - 203591371 # date: 2023-07-05 17:00:00, closest block time: 2023-07-05T17:00:38, time diff: 0.63 minutes
+  - 203783757 # date: 2023-07-06 17:00:00, closest block time: 2023-07-06T16:45:05, time diff: 14.92 minutes
+  - 203976745 # date: 2023-07-07 17:00:00, closest block time: 2023-07-07T16:59:03, time diff: 0.95 minutes
+  - 204170207 # date: 2023-07-08 17:00:00, closest block time: 2023-07-08T16:59:22, time diff: 0.63 minutes
+  - 204369335 # date: 2023-07-09 17:00:00, closest block time: 2023-07-09T17:13:29, time diff: 13.48 minutes
+  - 204566671 # date: 2023-07-10 17:00:00, closest block time: 2023-07-10T17:21:24, time diff: 21.40 minutes
+  - 204758086 # date: 2023-07-11 17:00:00, closest block time: 2023-07-11T16:55:17, time diff: 4.72 minutes
+  - 204957803 # date: 2023-07-12 17:00:00, closest block time: 2023-07-12T17:17:58, time diff: 17.97 minutes
+  - 205148740 # date: 2023-07-13 17:00:00, closest block time: 2023-07-13T16:42:03, time diff: 17.95 minutes
+  - 205335793 # date: 2023-07-14 17:00:00, closest block time: 2023-07-14T16:58:16, time diff: 1.73 minutes
+  - 205525976 # date: 2023-07-15 17:00:00, closest block time: 2023-07-15T16:59:37, time diff: 0.38 minutes
+  - 205722890 # date: 2023-07-16 17:00:00, closest block time: 2023-07-16T17:12:58, time diff: 12.97 minutes
+  - 205916752 # date: 2023-07-17 17:00:00, closest block time: 2023-07-17T17:16:25, time diff: 16.42 minutes
+  - 206105685 # date: 2023-07-18 17:00:00, closest block time: 2023-07-18T17:08:17, time diff: 8.28 minutes
+  - 206296953 # date: 2023-07-19 17:00:00, closest block time: 2023-07-19T16:57:28, time diff: 2.53 minutes
+  - 206492762 # date: 2023-07-20 17:00:00, closest block time: 2023-07-20T17:18:25, time diff: 18.42 minutes
+  - 206681659 # date: 2023-07-21 17:00:00, closest block time: 2023-07-21T16:51:34, time diff: 8.43 minutes
+  - 206878297 # date: 2023-07-22 17:00:00, closest block time: 2023-07-22T17:01:09, time diff: 1.15 minutes
+  - 207074312 # date: 2023-07-23 17:00:00, closest block time: 2023-07-23T17:10:53, time diff: 10.88 minutes
+  - 207267765 # date: 2023-07-24 17:00:00, closest block time: 2023-07-24T17:02:25, time diff: 2.42 minutes
+  - 207463143 # date: 2023-07-25 17:00:00, closest block time: 2023-07-25T16:58:16, time diff: 1.73 minutes
+  - 207659526 # date: 2023-07-26 17:00:00, closest block time: 2023-07-26T17:04:56, time diff: 4.93 minutes
+  - 207853186 # date: 2023-07-27 17:00:00, closest block time: 2023-07-27T17:03:06, time diff: 3.10 minutes
+  - 208050641 # date: 2023-07-28 17:00:00, closest block time: 2023-07-28T17:04:56, time diff: 4.93 minutes
+  - 208249024 # date: 2023-07-29 17:00:00, closest block time: 2023-07-29T17:04:28, time diff: 4.47 minutes
+  - 208448936 # date: 2023-07-30 17:00:00, closest block time: 2023-07-30T17:06:23, time diff: 6.38 minutes
+  - 208645376 # date: 2023-07-31 17:00:00, closest block time: 2023-07-31T16:53:19, time diff: 6.68 minutes
+  - 208844666 # date: 2023-08-01 17:00:00, closest block time: 2023-08-01T17:18:53, time diff: 18.88 minutes
+  - 209038990 # date: 2023-08-02 17:00:00, closest block time: 2023-08-02T17:00:24, time diff: 0.40 minutes
+  - 209236492 # date: 2023-08-03 17:00:00, closest block time: 2023-08-03T17:05:36, time diff: 5.60 minutes
+  - 209433181 # date: 2023-08-04 17:00:00, closest block time: 2023-08-04T16:59:50, time diff: 0.17 minutes
+  - 209631825 # date: 2023-08-05 17:00:00, closest block time: 2023-08-05T17:02:18, time diff: 2.30 minutes
+  - 209829665 # date: 2023-08-06 17:00:00, closest block time: 2023-08-06T16:49:03, time diff: 10.95 minutes
+  - 210028744 # date: 2023-08-07 17:00:00, closest block time: 2023-08-07T16:52:41, time diff: 7.32 minutes
+  - 210227700 # date: 2023-08-08 17:00:00, closest block time: 2023-08-08T17:02:01, time diff: 2.02 minutes
+  - 210423900 # date: 2023-08-09 17:00:00, closest block time: 2023-08-09T17:07:50, time diff: 7.83 minutes
+  - 210621266 # date: 2023-08-10 17:00:00, closest block time: 2023-08-10T16:59:22, time diff: 0.63 minutes
+  - 210812419 # date: 2023-08-11 17:00:00, closest block time: 2023-08-11T16:05:15, time diff: 54.75 minutes
+  - 211022304 # date: 2023-08-12 17:00:00, closest block time: 2023-08-12T17:19:42, time diff: 19.70 minutes
+  - 211217471 # date: 2023-08-13 17:00:00, closest block time: 2023-08-13T16:39:50, time diff: 20.17 minutes
+  - 211417910 # date: 2023-08-14 17:00:00, closest block time: 2023-08-14T16:53:00, time diff: 7.00 minutes
+  - 211615108 # date: 2023-08-15 17:00:00, closest block time: 2023-08-15T16:45:52, time diff: 14.13 minutes
+  - 211811568 # date: 2023-08-16 17:00:00, closest block time: 2023-08-16T16:58:49, time diff: 1.18 minutes
+  - 212004756 # date: 2023-08-17 17:00:00, closest block time: 2023-08-17T17:04:25, time diff: 4.42 minutes
+  - 212196048 # date: 2023-08-18 17:00:00, closest block time: 2023-08-18T16:55:24, time diff: 4.60 minutes
+  - 212392504 # date: 2023-08-19 17:00:00, closest block time: 2023-08-19T16:47:02, time diff: 12.97 minutes
+  - 212593621 # date: 2023-08-20 17:00:00, closest block time: 2023-08-20T17:06:12, time diff: 6.20 minutes
+  - 212789015 # date: 2023-08-21 17:00:00, closest block time: 2023-08-21T16:49:58, time diff: 10.03 minutes
+  - 212988808 # date: 2023-08-22 17:00:00, closest block time: 2023-08-22T17:10:23, time diff: 10.38 minutes
+  - 213180985 # date: 2023-08-23 17:00:00, closest block time: 2023-08-23T16:57:53, time diff: 2.12 minutes
+  - 213377057 # date: 2023-08-24 17:00:00, closest block time: 2023-08-24T16:57:01, time diff: 2.98 minutes
+  - 213576449 # date: 2023-08-25 17:00:00, closest block time: 2023-08-25T17:12:12, time diff: 12.20 minutes
+  - 213778868 # date: 2023-08-26 17:00:00, closest block time: 2023-08-26T17:23:07, time diff: 23.12 minutes
+  - 213975365 # date: 2023-08-27 17:00:00, closest block time: 2023-08-27T16:50:42, time diff: 9.30 minutes
+  - 214174532 # date: 2023-08-28 17:00:00, closest block time: 2023-08-28T16:57:03, time diff: 2.95 minutes
+  - 214370200 # date: 2023-08-29 17:00:00, closest block time: 2023-08-29T16:50:23, time diff: 9.62 minutes
+  - 214569028 # date: 2023-08-30 17:00:00, closest block time: 2023-08-30T16:58:05, time diff: 1.92 minutes
+  - 214767915 # date: 2023-08-31 17:00:00, closest block time: 2023-08-31T17:00:54, time diff: 0.90 minutes
+  - 214968197 # date: 2023-09-01 17:00:00, closest block time: 2023-09-01T17:17:41, time diff: 17.68 minutes
+  - 215165045 # date: 2023-09-02 17:00:00, closest block time: 2023-09-02T16:58:02, time diff: 1.97 minutes
+  - 215368089 # date: 2023-09-03 17:00:00, closest block time: 2023-09-03T17:12:33, time diff: 12.55 minutes
+  - 215565626 # date: 2023-09-04 17:00:00, closest block time: 2023-09-04T16:48:54, time diff: 11.10 minutes
+  - 215766257 # date: 2023-09-05 17:00:00, closest block time: 2023-09-05T17:01:54, time diff: 1.90 minutes
+  - 215966517 # date: 2023-09-06 17:00:00, closest block time: 2023-09-06T17:10:24, time diff: 10.40 minutes
+  - 216164248 # date: 2023-09-07 17:00:00, closest block time: 2023-09-07T17:01:39, time diff: 1.65 minutes
+  - 216359769 # date: 2023-09-08 17:00:00, closest block time: 2023-09-08T16:42:41, time diff: 17.32 minutes
+  - 216563537 # date: 2023-09-09 17:00:00, closest block time: 2023-09-09T17:02:48, time diff: 2.80 minutes
+  - 216763939 # date: 2023-09-10 17:00:00, closest block time: 2023-09-10T17:13:45, time diff: 13.75 minutes
+  - 216957544 # date: 2023-09-11 17:00:00, closest block time: 2023-09-11T16:55:30, time diff: 4.50 minutes
+  - 217154488 # date: 2023-09-12 17:00:00, closest block time: 2023-09-12T16:58:17, time diff: 1.72 minutes
+  - 217284100 # date: 2023-09-13 17:00:00, closest block time: 2023-09-13T08:47:22, time diff: 492.63 minutes
+  - 217350337 # date: 2023-09-13 17:00:00, closest block time: 2023-09-13T17:00:58, time diff: 0.97 minutes
+  - 217546890 # date: 2023-09-14 17:00:00, closest block time: 2023-09-14T17:04:06, time diff: 4.10 minutes
+  - 217745841 # date: 2023-09-15 17:00:00, closest block time: 2023-09-15T17:10:27, time diff: 10.45 minutes
+  - 217944404 # date: 2023-09-16 17:00:00, closest block time: 2023-09-16T17:08:24, time diff: 8.40 minutes
+  - 218145814 # date: 2023-09-17 17:00:00, closest block time: 2023-09-17T17:19:06, time diff: 19.10 minutes
+  - 218341665 # date: 2023-09-18 17:00:00, closest block time: 2023-09-18T17:05:23, time diff: 5.38 minutes
+  - 218540518 # date: 2023-09-19 17:00:00, closest block time: 2023-09-19T17:17:37, time diff: 17.62 minutes
+  - 219531346 # date: 2023-09-24 17:00:00, closest block time: 2023-09-24T16:57:24, time diff: 2.60 minutes
+  - 219729755 # date: 2023-09-25 17:00:00, closest block time: 2023-09-25T16:45:47, time diff: 14.22 minutes

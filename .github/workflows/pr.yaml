@@ -1,0 +1,16 @@
+name: Pull Request
+on:
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint_test_build:
+    runs-on: ubuntu-20.04-32c-128g
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v3
+      - name: lint
+        uses: ./.github/actions/lint
